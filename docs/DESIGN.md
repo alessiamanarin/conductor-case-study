@@ -1,6 +1,6 @@
 # Design: loan disbursement on Temporal
 
-Diagrams: [DIAGRAMS.md](DIAGRAMS.md) (Mermaid) and [loan-diagrams.excalidraw](loan-diagrams.excalidraw).
+Diagrams: [DIAGRAMS.md](DIAGRAMS.md) (Mermaid) and [Excalidraw](https://excalidraw.com/#json=1tKHe5OvCcvMSdrCy3ia8,L1nHmBih2Pwedt8qThNEgw) (file: [loan-diagrams.excalidraw](loan-diagrams.excalidraw)).
 
 ## 1. Overview
 
@@ -43,7 +43,7 @@ await self.end(AppState.FUNDED)
 
 The demo uses the same code with shorter deadlines (seconds instead of minutes).
 
-## 4.Errors and exceptions
+## 4. Errors and exceptions
 
 | Problem | What happens |
 |---|---|
