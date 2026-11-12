@@ -1,0 +1,19 @@
+{
+  "channel": "broker",
+  "reference": "BRK-2001",
+  "broker": "Northside Finance Brokers",
+  "email_subject": "New referral: Sam Review, personal loan",
+  "application": {
+    "product": "personal",
+    "amount_cents": 1500000,
+    "term_months": 36,
+    "documents": ["government_id", "proof_of_income"],
+    "applicant": {
+      "full_name": "Sam Review",
+      "email": "sam@example.test",
+      "date_of_birth": "1985-09-12",
+      "annual_income_cents": 9000000,
+      "demo_profile": ["near_prime"]
+    }
+  }
+}

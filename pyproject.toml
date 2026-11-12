@@ -1,0 +1,28 @@
+[project]
+name = "loan-temporal"
+version = "0.1.0"
+description = "Loan disbursement orchestration on Temporal"
+requires-python = ">=3.11"
+dependencies = ["temporalio>=1.9"]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-asyncio", "ruff"]
+
+[tool.setuptools.packages.find]
+include = ["loan_origination*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "session"
+asyncio_default_test_loop_scope = "session"
+testpaths = ["tests"]
+markers = ["temporal: needs a Temporal test server (tier 2); auto-skipped if unavailable"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+# UP042: str-based enums are a fixed project decision. SIM105: explicit try reads better in workflows.
+ignore = ["RUF012", "UP042", "SIM105"]

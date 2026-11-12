@@ -1,0 +1,44 @@
+{
+  "channel": "aggregator",
+  "batch_id": "AGG-2026-11-12-01",
+  "applications": [
+    {
+      "reference": "AGG-3001",
+      "application": {
+        "product": "debt_consolidation",
+        "amount_cents": 1500000,
+        "term_months": 36,
+        "documents": ["government_id", "proof_of_income", "creditor_statements"],
+        "product_data": {
+          "debts": [
+            {"creditor": "card_a", "balance_cents": 800000},
+            {"creditor": "card_b", "balance_cents": 400000}
+          ]
+        },
+        "applicant": {
+          "full_name": "Priya Batch",
+          "email": "priya@example.test",
+          "date_of_birth": "1992-02-20",
+          "annual_income_cents": 9000000,
+          "demo_profile": ["prime"]
+        }
+      }
+    },
+    {
+      "reference": "AGG-3002",
+      "application": {
+        "product": "personal",
+        "amount_cents": 1000000,
+        "term_months": 24,
+        "documents": ["government_id", "proof_of_income"],
+        "applicant": {
+          "full_name": "Lee Outage",
+          "email": "lee@example.test",
+          "date_of_birth": "1988-07-03",
+          "annual_income_cents": 9000000,
+          "demo_profile": ["prime", "outage_credit"]
+        }
+      }
+    }
+  ]
+}

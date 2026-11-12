@@ -1,0 +1,17 @@
+{
+  "channel": "portal",
+  "reference": "P-1001",
+  "application": {
+    "product": "personal",
+    "amount_cents": 1500000,
+    "term_months": 36,
+    "documents": ["government_id", "proof_of_income"],
+    "applicant": {
+      "full_name": "Dana Demo",
+      "email": "dana@example.test",
+      "date_of_birth": "1990-04-01",
+      "annual_income_cents": 9000000,
+      "demo_profile": ["prime"]
+    }
+  }
+}
