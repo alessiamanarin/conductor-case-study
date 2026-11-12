@@ -1,12 +1,12 @@
 # Design: loan disbursement on Temporal
 
-The bare-bones answer to the case study, scoped to the 2-hour timebox. Diagrams: [DIAGRAMS.md](DIAGRAMS.md) (Mermaid) and [Excalidraw](https://excalidraw.com/#json=1tKHe5OvCcvMSdrCy3ia8,L1nHmBih2Pwedt8qThNEgw) (file: [loan-diagrams.excalidraw](loan-diagrams.excalidraw)).
+Diagrams: [DIAGRAMS.md](DIAGRAMS.md) (Mermaid) and [loan-diagrams.excalidraw](loan-diagrams.excalidraw).
 
-## 1. The idea in one paragraph
+## 1. Overview
 
 Every application gets **one Temporal workflow**, with id `loan-<channel>-<reference>`. The workflow runs the steps in order (validate → enrich → underwrite → fund) and calls **activities** for anything that touches the outside world (database, providers, bank). Temporal handles retries, waiting and crash recovery. Whenever a person is needed, the workflow moves to `ESCALATED` and **waits for a decision sent as a Temporal Update**, then carries on. Every application ends **funded**, **declined** or **escalated**.
 
-## 2. The brief's questions
+## 2. Design Criteria
 
 | Question | Answer |
 |---|---|
@@ -43,7 +43,7 @@ await self.end(AppState.FUNDED)
 
 The demo uses the same code with shorter deadlines (seconds instead of minutes).
 
-## 4. What happens when things go wrong
+## 4.Errors and exceptions
 
 | Problem | What happens |
 |---|---|
@@ -87,14 +87,4 @@ The audit log in SQLite is the permanent record: every state change, provider re
 - Reminders to applicants for missing documents.
 - Paging a supervisor when a review waits too long.
 - An SLA monitor and alerts.
-- A backup credit bureau.
-- Reserve-then-release funding.
-- Per-product task queues.
-- Real broker and aggregator ingestion: a scheduled inbox poll, and a workflow per batch.
-- Auto loan rules (loan-to-value).
-- Production pieces:
-  - Postgres;
-  - real provider clients;
-  - reviewer login and four-eyes approval;
-  - encrypted personal data;
-  - workflow versioning with replay tests.
+- UI for customer reporting
