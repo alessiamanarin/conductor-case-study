@@ -1,6 +1,6 @@
 # Diagrams
 
-The same four diagrams are in [loan-diagrams.excalidraw](loan-diagrams.excalidraw) (open it at excalidraw.com with Menu → Open). These Mermaid versions render on GitHub and in VS Code's Markdown preview.
+The same four diagrams are in Excalidraw: **[open the shared link](https://excalidraw.com/#json=1tKHe5OvCcvMSdrCy3ia8,L1nHmBih2Pwedt8qThNEgw)** (source file: [loan-diagrams.excalidraw](loan-diagrams.excalidraw)). These Mermaid versions render on GitHub and in VS Code's Markdown preview.
 
 ## 1. Architecture
 

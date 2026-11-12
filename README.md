@@ -7,7 +7,7 @@ One Temporal workflow per loan application:
 Every application ends **funded**, **declined** or **escalated** to a human, who decides and lets it resume. The three input channels are sample payloads, third parties are faked, storage is SQLite, and Temporal runs locally.
 
 - Design (the brief's questions, trade-offs, what I'd add next): [docs/DESIGN.md](docs/DESIGN.md)
-- Four diagrams: [docs/DIAGRAMS.md](docs/DIAGRAMS.md) (Mermaid) and [docs/loan-diagrams.excalidraw](docs/loan-diagrams.excalidraw) (open at excalidraw.com, Menu → Open)
+- Four diagrams: [docs/DIAGRAMS.md](docs/DIAGRAMS.md) (Mermaid) and [docs/loan-diagrams.excalidraw](docs/loan-diagrams.excalidraw) — **[open in Excalidraw](https://excalidraw.com/#json=1tKHe5OvCcvMSdrCy3ia8,L1nHmBih2Pwedt8qThNEgw)**
 - [docs/CLAUDE_PLAN.md](docs/CLAUDE_PLAN.md) is the Claude plan file: the earlier, fuller plan; this is the deliberately bare-bones version, scoped to the 2-hour timebox. DESIGN.md §7 lists what was left out.
 
 ## Setup

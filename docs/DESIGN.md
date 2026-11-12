@@ -1,6 +1,6 @@
 # Design: loan disbursement on Temporal
 
-The bare-bones answer to the case study, scoped to the 2-hour timebox. Diagrams: [DIAGRAMS.md](DIAGRAMS.md) (Mermaid) and [loan-diagrams.excalidraw](loan-diagrams.excalidraw).
+The bare-bones answer to the case study, scoped to the 2-hour timebox. Diagrams: [DIAGRAMS.md](DIAGRAMS.md) (Mermaid) and [Excalidraw](https://excalidraw.com/#json=1tKHe5OvCcvMSdrCy3ia8,L1nHmBih2Pwedt8qThNEgw) (file: [loan-diagrams.excalidraw](loan-diagrams.excalidraw)).
 
 ## 1. The idea in one paragraph
 
